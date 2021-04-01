@@ -9,11 +9,12 @@ public class SpawnEnemy : MonoBehaviour
     public float startTime;
     public float decreaseTime;
     public float minTime;
+    private int rand;
     void Update()
     {
         if (spawnTimer <= 0)
         {
-            int rand = Random.Range(0, enemies.Length);
+            rand = Random.Range(0, enemies.Length);
             Instantiate(enemies[rand], transform.position,Quaternion.Euler(0,180,0));
             spawnTimer = startTime;
             if(startTime>minTime)

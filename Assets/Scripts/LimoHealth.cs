@@ -9,7 +9,8 @@ public class LimoHealth : Health
     public Text healthText;
     public GameObject gameOverPanel;
     public GameObject ScoreManager;
-    // Start is called before the first frame update
+    public GameObject LeftButton;
+    public GameObject RightButton; 
     protected override void Update()
     {
         if (health <= 0)
@@ -22,6 +23,8 @@ public class LimoHealth : Health
     }
     protected override void Die()
     {
+        LeftButton.SetActive(false);
+        RightButton.SetActive(false);
         gameOverPanel.SetActive(true);
         ScoreManager.GetComponent<ScoreScript>().alive = false;
         Destroy(transform.parent.gameObject);

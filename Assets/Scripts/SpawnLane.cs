@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class SpawnLane : MonoBehaviour
 {
-    public GameObject enemy;
+    public GameObject[] enemy;
+    private int rand;
 
     private void Start()
     {
-        Instantiate(enemy, transform.position, Quaternion.Euler(0, 180, 0));
+        rand = Random.Range(0, enemy.Length);
+        Instantiate(enemy[rand], transform.position, Quaternion.Euler(0, 180, 0));
     }
 }
