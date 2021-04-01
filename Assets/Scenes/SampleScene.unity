@@ -285,8 +285,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 605, y: -1095}
-  m_SizeDelta: {x: 72.86536, y: 54.057617}
+  m_AnchoredPosition: {x: 632, y: -1095}
+  m_SizeDelta: {x: 123.25391, y: 62.188354}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &59032864
 MonoBehaviour:
@@ -314,13 +314,13 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 2
     m_MaxSize: 45
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: 
 --- !u!222 &59032865
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1567,6 +1567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 411482968}
+  scoreTextPanel: {fileID: 59032864}
   alive: 1
 --- !u!54 &1432803619
 Rigidbody:
@@ -1905,8 +1906,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 522.1, y: -1095}
-  m_SizeDelta: {x: 72.86536, y: 54.057617}
+  m_AnchoredPosition: {x: 498.5, y: -1095}
+  m_SizeDelta: {x: 120.001434, y: 54.057617}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1725034612
 MonoBehaviour:
@@ -2279,7 +2280,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1936448821
 RectTransform:
   m_ObjectHideFlags: 0
